@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Note Markdown Exporter",
+  "version": "1.0",
+  "description": "Noteの下書きをMarkdownでエクスポート",
+  "icons": {
+    "16": "icon/fav-16.png",
+    "48": "icon/fav-48.png",
+    "128": "icon/fav-128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://editor.note.com/notes/*/edit/"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "permissions": []
+}
